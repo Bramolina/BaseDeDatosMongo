@@ -331,7 +331,7 @@ public class TrainTicketSystem {
     // ARRAY Y MATRICES DE USUARIOS
     // =========================================
 
-    static String[][] usuarios = new String[1][5];
+    static String[][] usuarios = new String[3][5];
 
     static String[] encabezados = {
             "id", "nombre", "apellido", "origen", "destino"
@@ -390,7 +390,7 @@ public class TrainTicketSystem {
 
         if (usuarioRegistrado != null) {
 
-            usuarios[0][0] = usuarioRegistrado.getString("id");
+            usuarios[1][0] = usuarioRegistrado.getString("id");
             usuarios[0][1] = usuarioRegistrado.getString("nombre");
             usuarios[0][2] = usuarioRegistrado.getString("apellido");
             usuarios[0][3] = usuarioRegistrado.getString("origen");
@@ -534,11 +534,11 @@ public class TrainTicketSystem {
     }
 
 
-    // =========================================
-    // ARRAY Y MATRICES DE TRENES
-    // =========================================
 
-    static String[][] trenes = new String[1][3];
+    // ARRAY Y MATRICES DE TRENES
+
+
+    static String[][] trenes = new String[2][3];
 
     static String[] encabezadosTren = {
             "id", "modelo", "capacidad"
